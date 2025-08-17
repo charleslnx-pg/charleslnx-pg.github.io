@@ -1,0 +1,159 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+.wrapper{
+	min-height: 100vh;
+	padding: 15px;
+	display: flex;
+	flex-direction: column;
+	flex-wrap: wrap;
+	gap: 15px;
+	font-size: 20px;
+	font-family: sans-serif;
+	
+}
+.content1{
+	/*background-image: url("img/juracy.png");
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-color:#87FA6B;
+	*/
+	background-color:#3FADE0;
+
+	
+	}
+
+
+.area2{
+	background-image: url("img/IMG_9024.JPEG");
+	background-repeat: no-repeat;
+	background-size: cover;
+	}
+	
+.area2:hover, .area3:hover, .area4:hover,.area5:hover{
+	filter: opacity(80%);
+	transition: width 0.5s ease-in-out;
+}
+	
+	.area2 span, .area3 span, .area4 span, .area5 span{
+	display:flex;
+		margin-top: 450px;
+	z-index:1;
+	
+	}
+	
+		.area2:hover> span, .area3:hover> span, .area4:hover> span, .area5:hover> span{
+	display:flex;
+
+	z-index:2;
+	padding:0;
+	
+	}
+.area3{
+	background-image: url("img/IMG_8746.JPEG");
+	background-repeat: no-repeat;
+	background-size: cover;
+	}
+.area4{
+	background-image: url("img/IMG_9325.JPEG");
+	background-repeat: no-repeat;
+	background-size: cover;
+	}
+.area5{
+	background-image: url("img/IMG_9415.JPEG");
+	background-repeat: no-repeat;
+	background-size: cover;
+
+	}
+ .footer, .content1, .content2>div>div{
+	flex: 1;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	/*border: 5px solid #5AB9DB;*/
+}
+.footer{
+	background-color:#FF472D;
+	color: fff;
+	font-size:12px;
+
+}
+.main-container{
+	flex:6;
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+	gap:15px;	
+}
+.content2{
+	flex: 1;
+	display: flex;
+	flex-direction: column;
+	flex-wrap: wrap;
+	gap: 15px;
+
+}
+.content2>div{
+	flex:1;
+	display: flex;
+	justify-content: space-between;
+	flex-wrap:wrap;
+	gap: 15px;
+
+}
+@media screen and (max-width: 880px){
+	
+	.main-container>div{
+		min-height:400px;
+	}
+	.content1{
+		flex:100%;
+	}
+	
+.header{
+	min-height:90px;
+}	
+
+.footer{
+	min-height:110px;
+	
+}
+
+
+}
+@media screen and (max-width: 520px){
+	.content1{
+		background-color:#FFF;
+	}
+	
+	.content2>div{
+		flex-direction:column;
+	}
+	.content2>div>div{
+
+	min-height: 200px;
+	
+	}
+
+	.area2> span, .area3> span, .area4> span, .area5 > span{
+	display:flex;
+	background-position:center ;
+	background-size:cover;
+	
+	}
+
+
+
+}
+
+.item:not(:hover) {
+  /*filter: blur(2px);
+  filter: grayscale(1);*/
+    filter: none;
+  transition: filter 0.3s ease;
+}
+
+
+
